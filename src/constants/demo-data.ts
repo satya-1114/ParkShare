@@ -1,0 +1,153 @@
+import type { ParkingSpace, Booking } from "@/types";
+
+/**
+ * Isolated sample data for visual demonstration only.
+ * Not to be imported into reusable components.
+ */
+
+export const SAMPLE_PARKING_SPACES: ParkingSpace[] = [
+  {
+    id: "ps-001",
+    name: "Green Meadows Residency",
+    area: "Indiranagar",
+    city: "Bengaluru",
+    state: "Karnataka",
+    pincode: "560038",
+    distanceKm: 0.6,
+    hourlyPrice: 40,
+    dailyPrice: 320,
+    rating: 4.8,
+    reviewCount: 126,
+    trustScore: 92,
+    verified: true,
+    vehicleTypes: ["CAR", "EV"],
+    amenities: ["CCTV", "COVERED", "SECURITY", "ACCESS_24X7"],
+    propertyType: "APARTMENT",
+    totalSlots: 6,
+    availableSlots: 3,
+    imageUrl:
+      "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=800&q=80",
+    description:
+      "Secure covered parking inside a gated residential community with round-the-clock security and CCTV monitoring.",
+    host: {
+      name: "Ravi Kumar",
+      verified: true,
+      rating: 4.9,
+      memberSince: "2024",
+    },
+  },
+  {
+    id: "ps-002",
+    name: "Marine Drive Private Lot",
+    area: "Nariman Point",
+    city: "Mumbai",
+    state: "Maharashtra",
+    pincode: "400021",
+    distanceKm: 1.2,
+    hourlyPrice: 80,
+    dailyPrice: 600,
+    rating: 4.6,
+    reviewCount: 84,
+    trustScore: 88,
+    verified: true,
+    vehicleTypes: ["CAR", "EV", "TRUCK"],
+    amenities: ["CCTV", "SECURITY", "EV_CHARGING"],
+    propertyType: "COMMERCIAL_BUILDING",
+    totalSlots: 12,
+    availableSlots: 5,
+    imageUrl:
+      "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800&q=80",
+    description:
+      "Well-lit commercial parking with EV chargers, a short walk from Marine Drive.",
+    host: {
+      name: "Anita Shah",
+      verified: true,
+      rating: 4.7,
+      memberSince: "2023",
+    },
+  },
+  {
+    id: "ps-003",
+    name: "Sector 29 Home Parking",
+    area: "Sector 29",
+    city: "Gurugram",
+    state: "Haryana",
+    pincode: "122002",
+    distanceKm: 2.4,
+    hourlyPrice: 30,
+    dailyPrice: 240,
+    rating: 4.4,
+    reviewCount: 41,
+    trustScore: 84,
+    verified: true,
+    vehicleTypes: ["BIKE", "BICYCLE", "CAR"],
+    amenities: ["CCTV"],
+    propertyType: "INDIVIDUAL_HOUSE",
+    totalSlots: 2,
+    availableSlots: 1,
+    imageUrl:
+      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80",
+    description: "Driveway parking at a private residence near Sector 29 market.",
+    host: {
+      name: "Priya Malhotra",
+      verified: true,
+      rating: 4.5,
+      memberSince: "2025",
+    },
+  },
+  {
+    id: "ps-004",
+    name: "Anna Nagar Tower Parking",
+    area: "Anna Nagar",
+    city: "Chennai",
+    state: "Tamil Nadu",
+    pincode: "600040",
+    distanceKm: 3.1,
+    hourlyPrice: 50,
+    dailyPrice: 400,
+    rating: 4.7,
+    reviewCount: 73,
+    trustScore: 90,
+    verified: true,
+    vehicleTypes: ["CAR", "EV", "TRUCK", "BIKE"],
+    amenities: ["CCTV", "COVERED", "SECURITY", "EV_CHARGING", "ACCESS_24X7"],
+    propertyType: "APARTMENT",
+    totalSlots: 8,
+    availableSlots: 4,
+    imageUrl:
+      "https://images.unsplash.com/photo-1545179605-1296651e9d43?w=800&q=80",
+    description:
+      "Covered basement parking with EV charging, secured by 24/7 on-site guards.",
+    host: {
+      name: "Karthik Iyer",
+      verified: true,
+      rating: 4.8,
+      memberSince: "2024",
+    },
+  },
+];
+
+export const SAMPLE_BOOKINGS: Booking[] = [
+  {
+    id: "bk-001",
+    parkingId: "ps-001",
+    parkingName: "Green Meadows Residency",
+    area: "Indiranagar, Bengaluru",
+    date: "2026-07-14",
+    startTime: "10:00",
+    durationHours: 3,
+    amount: 120,
+    status: "UPCOMING",
+  },
+  {
+    id: "bk-002",
+    parkingId: "ps-002",
+    parkingName: "Marine Drive Private Lot",
+    area: "Nariman Point, Mumbai",
+    date: "2026-07-04",
+    startTime: "18:00",
+    durationHours: 2,
+    amount: 160,
+    status: "COMPLETED",
+  },
+];
